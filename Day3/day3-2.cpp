@@ -18,8 +18,7 @@ int main() {
     std::set elf1(line1.begin(), line1.end());
     std::set elf2(line2.begin(), line2.end());
     std::set elf3(line3.begin(), line3.end());
-    std::set_intersection(elf1.begin(), elf1.end(),
-                          elf2.begin(), elf2.end(),
+    std::set_intersection(elf1.begin(), elf1.end(), elf2.begin(), elf2.end(),
                           std::back_inserter(temp_intersec));
     std::set_intersection(temp_intersec.begin(), temp_intersec.end(),
                           elf3.begin(), elf3.end(),
