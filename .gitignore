@@ -1,3 +1,5 @@
 Day*/day[0-9]
 Day*/day[0-9][0-9]
 Day*/.vscode
+Day*/cmake-build-debug
+Day*/.idea
