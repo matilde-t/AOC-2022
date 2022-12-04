@@ -13,12 +13,12 @@ int main() {
         ub1 = std::stoi(first.substr(first.find('-') + 1, first.size()));
         lb2 = std::stoi(second.substr(0, second.find('-')));
         ub2 = std::stoi(second.substr(second.find('-') + 1, second.size()));
-        if ((ub1 >= lb2 && ub1 <= ub2) || (ub2 >= lb1 && ub2 <= ub1)) {
+        if ((lb2 <= ub1 && ub1 <= ub2) || (lb1 <= ub2 && ub2 <= ub1)) {
             count++;
         }
     }
     input.close();
-    std::cout << "The number of fully contained ranges is: " << count
+    std::cout << "The number of overlapping ranges is: " << count
               << std::endl;
     return 0;
 }
