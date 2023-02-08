@@ -8,8 +8,8 @@ int main() {
   std::ifstream input("../input");
   std::string line;
   std::vector<std::deque<char>> stacks;
-  std::getline(input, line);
   int quantity, from, to;
+  std::getline(input, line);
   int N = (line.size() + 1) / 4;
   for (auto i = 0; i < N; i++) {
     stacks.push_back(std::deque<char>());
